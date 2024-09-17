@@ -2,7 +2,9 @@ package com.example.br.etechoracio.pw3_study.Controller;
 
 import com.example.br.etechoracio.pw3_study.Service.MonitorService;
 import com.example.br.etechoracio.pw3_study.dto.MonitorResponseDTO;
+
 import com.example.br.etechoracio.pw3_study.dto.MonitorUpdateDTO;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,10 +25,12 @@ public class MonitorController {
     public ResponseEntity<MonitorResponseDTO> getMonitorById(@PathVariable Long id){
         return ResponseEntity.status(HttpStatus.OK).body(service.getMonitorById(id));
     }
+
     @PostMapping("/save")
     public ResponseEntity<MonitorResponseDTO> saveMonitor(@RequestBody MonitorResponseDTO monitorResponseDTO){
         return ResponseEntity.status(HttpStatus.CREATED).body(service.save(monitorResponseDTO));
     }
+
     @DeleteMapping("{id}")
     public ResponseEntity<String> deleteMonitor(@PathVariable Long id){
         service.delete(id);
@@ -39,4 +43,6 @@ public class MonitorController {
     public ResponseEntity<MonitorResponseDTO> updateMonitor(@PathVariable Long id, @RequestBody MonitorUpdateDTO monitorUpdateDTO){
         return ResponseEntity.status(HttpStatus.OK).body(service.update(monitorUpdateDTO, id));
     }
+
+
 }

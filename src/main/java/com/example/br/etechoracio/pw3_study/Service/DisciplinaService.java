@@ -46,7 +46,7 @@ public class DisciplinaService {
         Disciplina disciplina = repository.findById(id).orElseThrow(()-> new NoSuchElementException("Essa disciplina não existe"));
 
         disciplina.setNome(disciplinaUpdateDTO.getNome());
-        return repository.save(disciplina);
+        return repository.save(disciplina); 
     }
 
 }
