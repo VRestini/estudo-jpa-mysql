@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 @RestController
 @RequestMapping("/disciplina")
+@CrossOrigin(origins = "*")
 public class DisciplinaController {
     @Autowired
     public DisciplinaService disciplinaService;
