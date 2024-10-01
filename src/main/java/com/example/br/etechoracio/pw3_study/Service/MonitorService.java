@@ -1,24 +1,18 @@
 package com.example.br.etechoracio.pw3_study.Service;
 
-<<<<<<< HEAD
+
 import com.example.br.etechoracio.pw3_study.Entity.Monitor;
 import com.example.br.etechoracio.pw3_study.Repository.MonitorRepository;
 import com.example.br.etechoracio.pw3_study.dto.MonitorResponseDTO;
 import com.example.br.etechoracio.pw3_study.dto.MonitorUpdateDTO;
-=======
-import com.example.br.etechoracio.pw3_study.Entity.Disciplina;
-import com.example.br.etechoracio.pw3_study.Entity.Monitor;
-import com.example.br.etechoracio.pw3_study.Repository.MonitorRepository;
-import com.example.br.etechoracio.pw3_study.dto.DisciplinaResponseDTO;
-import com.example.br.etechoracio.pw3_study.dto.MonitorResponseDTO;
->>>>>>> e00a8fb4d68d9a3b3baa3ffa44bf0504d532f0ee
+
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-<<<<<<< HEAD
+
 import java.util.NoSuchElementException;
 import java.util.Optional;
 import java.util.stream.Collectors;
