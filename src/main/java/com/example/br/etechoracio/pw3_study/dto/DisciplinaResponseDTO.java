@@ -4,6 +4,7 @@ import lombok.Data;
 
 @Data
 public class DisciplinaResponseDTO {
+    private Long id;
     private String nome;
 
 }
